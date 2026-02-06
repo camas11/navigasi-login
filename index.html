@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LOGIN -->
+    <form id="loginForm">
+      <h1>Login</h1>
+
+      <label>Username</label>
+      <input type="text" id="loginUser" placeholder="masukkan username" required>
+
+      <label>Password</label>
+      <div class="password-field">
+        <input type="password" id="loginPass" placeholder="masukkan password" required>
+        <button type="button" id="toggleLoginPass">👁</button>
+      </div>
+
+      <button type="submit">Login</button>
+      <p>Belum punya akun? <a href="#" id="showRegister">Register</a></p>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="registerForm" style="display:none;">
+      <h1>Register</h1>
+
+      <label>Username</label>
+      <input type="text" id="regUser" placeholder="masukkan username" required>
+
+      <label>Password</label>
+      <div class="password-field">
+        <input type="password" id="regPass" placeholder="masukkan password" required>
+        <button type="button" id="toggleRegPass">👁</button>
+      </div>
+
+      <button type="button">Register</button>
+      <p>Sudah punya akun? <a href="#" id="showLogin">Login</a></p>
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
